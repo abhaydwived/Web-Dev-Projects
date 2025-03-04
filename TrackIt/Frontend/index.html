@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackIt Dashboard</title>
+    <link rel="stylesheet" href="Public/CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>TrackIt</h1>
+    </header>
+    
+    <main>
+        <section class="tracker" id="food">
+            <h2>Food Consumption</h2>
+            <input type="text" id="food-input" placeholder="Enter food item">
+            <button onclick="addTask('food')">Add</button>
+            <button onclick="clearAll('food')">All Clear</button>
+            <ul id="food-list"></ul>
+        </section>
+        
+        <section class="tracker" id="water">
+            <h2>Water Intake</h2>
+            <input type="text" id="water-input" placeholder="Enter water amount">
+            <button onclick="addTask('water')">Add</button>
+            <button onclick="clearAll('water')">All Clear</button>
+            <ul id="water-list"></ul>
+        </section>
+        
+        <section class="tracker" id="workout">
+            <h2>Workout Records</h2>
+            <input type="text" id="workout-input" placeholder="Enter workout details">
+            <button onclick="addTask('workout')">Add</button>
+            <button onclick="clearAll('workout')">All Clear</button>
+            <ul id="workout-list"></ul>
+        </section>
+        
+        <section class="tracker" id="study">
+            <h2>Study Targets</h2>
+            <input type="text" id="study-input" placeholder="Enter study target">
+            <button onclick="addTask('study')">Add</button>
+            <button onclick="clearAll('study')">All Clear</button>
+            <ul id="study-list"></ul>
+        </section>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+            <span id="progress-text">0% Completed</span>
+        </div>
+    
+        <div class="chart-container">
+            <canvas id="progressChart"></canvas>
+        </div>
+    </main>
+
+    
+    <script src="Public/js/main.js"></script>
+</body>
+</html>
