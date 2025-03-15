@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrackIt Dashboard</title>
-    <link rel="stylesheet" href="Public/CSS/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button id="theme">Theme</button>
     <header>
-        <h1>TrackIt</h1>
+        <h1>TaskMate</h1>
     </header>
     
     <main>
@@ -43,17 +44,9 @@
             <button onclick="clearAll('study')">All Clear</button>
             <ul id="study-list"></ul>
         </section>
-        <div class="progress-container">
-            <div class="progress-bar" id="progress-bar"></div>
-            <span id="progress-text">0% Completed</span>
-        </div>
-    
-        <div class="chart-container">
-            <canvas id="progressChart"></canvas>
-        </div>
     </main>
 
     
-    <script src="Public/js/main.js"></script>
+    <script src="main.js"></script>
 </body>
-</html>
+</html>  
